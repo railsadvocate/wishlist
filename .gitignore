@@ -14,9 +14,11 @@
 # Ignore all logfiles and tempfiles.
 /log/*
 /tmp/*
-.idea/*
 !/log/.keep
 !/tmp/.keep
+
+# Ignore all rubymine specific files
+/.idea/*
 
 # Ignore Byebug command history file.
 .byebug_history
