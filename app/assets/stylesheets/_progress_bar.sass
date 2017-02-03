@@ -1,0 +1,42 @@
+$num-steps: 3
+
+.wishlist-progress-bar
+  ol:nth-child(1)
+    list-style-type: none
+    width: 100%
+    display: table
+    text-align: center
+    padding-left: 0
+    li:first-child
+      left: -7px
+    li:nth-child(2)
+      left: 5px
+    li:last-child
+      left: 10px
+    li
+      position: relative
+      display: table-cell
+      text-align: center
+      color: $accent-maroon
+
+  ol:nth-child(2)
+    list-style-type: none
+    width: 100%
+    display: table
+    text-align: center
+    padding-left: 0
+    margin-top: 2em
+    margin-bottom: 1em
+    li:first-child
+      border-radius: 20px 0 0 20px
+    li:last-child
+      border-radius: 0 20px 20px 0
+    li
+      display: table-cell
+      background-color: #0B9444
+      span
+        padding: 1em 1.25em
+        background-color: #0B9444
+        border-radius: 2em
+        color: #DFF2BF
+        font-weight: bold

@@ -1,0 +1,16 @@
+.notepad
+  .notepad-vertical-lines
+    .notepad-vertical-line1
+    .notepad-vertical-line2
+  .notepad-top
+    Jasmin's Giftlist!
+  - counter = 1
+  - if type == 'show'
+    - 5.times do
+      .notepad-newline
+        .counter
+          = succeed '.' do
+            = counter
+          - counter += 1
+        .gift
+          Raspberry pi 3.0

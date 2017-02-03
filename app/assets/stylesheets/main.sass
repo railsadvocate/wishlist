@@ -1,0 +1,57 @@
+html, body
+  height: 100%
+
+body
+  background: #EEE url('balloon') no-repeat 100% 400px
+  background-size: 300px auto
+  @media screen and (max-width: 800px)
+    background-position: 50% 400px
+
+.page
+  max-width: 1200px
+  margin: 0 auto
+  background-color: #fff
+
+.page-content
+  margin: 0 1em
+  h1
+    color: $accent-orange
+
+.alert
+  color: #D8000C
+  background-color: #FFBABA
+
+.maroon
+  color: $accent-maroon
+
+.orange
+  color: $accent-orange
+
+.popover-title-text
+  font-size: 1.8em
+
+.center-text
+  text-align: center
+
+.top-margin-wrapper
+  margin-top: 1em
+
+h1,h2,h3,h4,h5,h6
+  margin-top: 0
+
+.navbar
+  background-color: $accent-maroon
+  border-radius: 0
+  margin-bottom: 0
+
+.nav.navbar-nav
+  li a
+    color: #fff
+    &:hover
+      color: #ffff99
+
+.navbar-brand
+  background: url('logo') no-repeat
+  background-size: contain
+  background-position: left center
+  width: 200px

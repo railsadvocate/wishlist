@@ -1,24 +1,7 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+A giftlist will have multiple gifts, but a gift will only belong to a single wishlist. A gift will have a name(string),
+an estimated price(double), a description (string, optional), 
+and a link to the site where the gift can be purchased. There 
+will also be a boolean indicating whether the gift can be 
+purchased on amazon.

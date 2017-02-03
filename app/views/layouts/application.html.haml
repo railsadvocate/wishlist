@@ -1,11 +1,16 @@
 !!!
 %html
   %head
-    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:content => 'text/html; charset=UTF-8', 'http-equiv' => 'Content-Type'}/
+    %meta{:name => 'viewport', :content => 'width=device-width'}
     %title Wishlist
     = csrf_meta_tags
-    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = stylesheet_link_tag 'application', '//fonts.googleapis.com/css?family=Krona+One'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
-  %body
-    = render '/layouts/layout-partials/flash-messages'
-    = yield
+  %body{:class => "#{controller_name} #{action_name}"}
+    .page.hi
+      = render '/layouts/layout-partials/navigation'
+      = render '/layouts/layout-partials/flash-messages'
+      = yield
+      = render '/layouts/layout-partials/footer'

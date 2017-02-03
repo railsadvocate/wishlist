@@ -1,0 +1,22 @@
+%main.page-content.wishlist-add-gifts
+  = render '/shared/progress-bar'
+  .col-xs-10.col-xs-offset-1.col-sm-6.col-sm-offset-3.add-gifts-main
+    %h1.page-header
+      Create Gifts!
+    = form_for [@giftlist, @gift] do |f|
+      %p
+        = f.label :name
+        = f.text_field :name, class: 'form-control'
+      %p
+        = f.label :description
+        = f.text_area :description, class: 'form-control'
+      .row
+        .col-sm-6
+          = f.label :estimated_price
+          = f.text_field :estimated_price, class: 'form-control'
+        .col-sm-6
+          = f.label :link
+          = f.text_field :link, class: 'form-control'
+      .row
+        .col-sm-6
+          = f.submit 'Add Gift!', class: 'btn btn-success add-gift-submit'

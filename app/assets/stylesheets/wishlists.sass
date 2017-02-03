@@ -1,0 +1,161 @@
+@import progress_bar
+
+.notepad
+  background-color: $notepad-yellow
+  box-shadow: 0 0 10px
+  font-family: monospace
+  @media screen and (max-width: 800px)
+    left: 10%
+    width: 80%
+    @media screen and (max-width: 400px)
+      left: 2%
+      width: 96%
+  .notepad-vertical-line1
+    background-color: $notepad-red
+    position: absolute
+    top: 50px
+    left: 75px
+    width: 1px
+    @media screen and (max-width: 600px)
+      left: 50px
+  .notepad-vertical-line2
+    background-color: $notepad-red
+    position: absolute
+    top: 50px
+    left: 80px
+    width: 1px
+    @media screen and (max-width: 600px)
+      left: 55px
+
+  > .notepad-top
+    height: 50px
+    background-color: #666666
+    border-radius: 2px 2px 0 0
+    text-align: center
+    font-family: Sans-Serif
+    font-size: 2em
+    color: #fff
+    padding-top: .2em
+
+  .notepad-newline
+    padding: 7px 0
+    border-bottom: 1px solid $notepad-line
+    > div
+      display: inline-block
+    .counter
+      width: 75px
+      text-align: center
+    .gift
+      margin-left: 1em
+
+.new-wishlist-form-wrapper
+  border: 1px solid $accent-orange
+  border-radius: 7px
+  margin-bottom: 2em
+  padding-bottom: 1em
+  margin-top: 1em
+  @media screen and (max-width: 400px)
+    > h1
+      font-size: 2.1em
+  form
+    margin-bottom: 1em
+    input[type='text']
+      font-size: 2em
+      font-weight: bold
+      width: 100%
+      border: 3px solid $accent-maroon
+      padding-right: 40px
+      padding-left: 10px
+      color: $accent-orange
+      @media screen and (max-width: 800px)
+        font-size: 1.85em
+      @media screen and (max-width: 400px)
+        font-size: 1.5em
+        padding: 5px
+      @media screen and (max-width: 360px)
+        font-size: 1.2em
+        padding: 10px
+  > ul.example-wishlists
+    padding-left: 0
+    list-style-type: none
+    > li
+      text-indent: 10px
+      display: none
+      color: $accent-orange
+      &::before
+        font-family: 'Glyphicons Halflings'
+        margin-right: 5px
+        content: "\e080"
+        position: relative
+        font-size: 10px
+  .glyphicon-chevron-down
+    position: relative
+    left: 5px
+    top: 2px
+    color: $accent-maroon
+    cursor: pointer
+    transition-duration: 1s
+
+.wishlist-examples
+  color: $accent-maroon
+  cursor: pointer
+
+.wishlist-public-warning
+  position: absolute
+  left: -200px
+  top: 0
+  width: 175px
+  padding: 1em
+  font-size: 18px
+  background-color: #FFFF99
+  border-radius: 25px 0 25px 0
+  > .warning-header
+    border-bottom: 1px dashed $accent-orange
+    text-align: center
+    font-size: 30px
+    color: $accent-maroon
+    margin: 0 0 10px 0
+
+.form-elements
+  position: relative
+  span
+    position: absolute
+    z-index: 2
+    height: 50px
+    right: 0
+    width: 40px
+    height: 50px
+    opacity: 0
+    cursor: pointer
+    @media screen and (max-width: $small-xs)
+      display: none
+  .glyphicon-info-sign
+    z-index: 1
+    position: absolute
+    padding: 11px
+    pointer-events: none
+    right: 0
+    font-size: 25px
+    color: $accent-maroon
+    @media screen and (max-width: $small-xs)
+      display: none
+
+.giftlist-visibility-warning
+  @media screen and (min-width: $small-xs+1)
+    display: none
+
+.wishlist-add-gifts
+  padding: 2em 0 3em 0
+  h1
+    margin-top: 0
+  .add-gifts-main
+    margin-bottom: 1em
+    margin-top: 1em
+
+.add-gift-submit
+  margin: 1em 0
+  width: 100%
+  @media screen and (max-width: $small-xs)
+    width: 50%
+  @media screen and (max-width: 400px)
+    width: 100%

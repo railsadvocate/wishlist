@@ -12,5 +12,18 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require bootstrap
 //= require turbolinks
-//= require_tree .
+//= require_tree
+
+$(document).on('turbolinks:load', function() {
+  'use strict';
+  $('[data-toggle="popover"]').popover({
+    container: 'body',
+    html: 'true',
+    content: "<strong class='orange'>Remember!</strong> This giftlist title will be publically publicly",
+    placement: 'right',
+    trigger: 'hover',
+    title: '<strong class="popover-title-text maroon">Important!</strong>'
+  });
+});

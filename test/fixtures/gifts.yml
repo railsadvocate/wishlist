@@ -1,0 +1,66 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+no_name:
+  description: A really amazing spider man video game
+  estimated_price: 9.95
+  link: http://www.google.com
+  giftlist: valid_giftlist
+
+no_description:
+  name: video game
+  estimated_price: 9.95
+  link: http://www.google.com
+  giftlist: valid_giftlist
+
+no_estimated_price:
+  name: TV remote
+  description: A wonderfully amazing remote to control your television
+  link: http://www.google.com
+  giftlist: valid_giftlist
+
+no_link:
+  name: cell phone
+  description: Samsung S7 by Galaxy
+  estimated_price: 9.95
+  giftlist: valid_giftlist
+
+gift_name_too_long:
+  description: a very long gift name
+  estimated_price: 9.95
+  link: http://www.google.com
+  giftlist: valid_giftlist
+
+gift_name_too_short:
+  name: a
+  description: a very short name
+  estimated_price: 9.95
+  link: http://www.google.com
+  giftlist: valid_giftlist
+
+gift_without_numeric_price:
+  name: pinecones
+  description: these pinecones smell really good
+  estimated_price: object
+  link: http://www.google.com
+  giftlist: valid_giftlist
+
+# valid gifts
+video_game:
+  name: call of duty modern warfare 2
+  description: The best call of duty game of all time
+  estimated_price: 29.99
+  link: http://www.google.com
+  giftlist: valid_giftlist
+
+book:
+  name: Christian Apologetics
+  description: Norman Geisler offers a stout defense of the Christian faith
+  estimated_price: 29.99
+  link: https://www.google.com
+  giftlist: valid_giftlist
+
+cookware:
+  name: Kitchen aid mixer
+  description: A must have kitchen utility to make your baking dreams come true
+  estimated_price: 300.00
+  link: http://www.google.com
+  giftlist: valid_giftlist

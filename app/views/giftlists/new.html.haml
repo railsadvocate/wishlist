@@ -1,0 +1,24 @@
+.page-content
+  .top-margin-wrapper
+    = render '/shared/progress-bar'
+  .row
+    .col-xs-10.col-xs-offset-1.col-sm-6.col-sm-offset-3.new-wishlist-form-wrapper
+      %h1.page-header.center-text
+        Create new Wishlist!
+      = form_for @giftlist do |f|
+        .form-elements
+          %i.glyphicon.glyphicon-info-sign
+          %span{:data => {:toggle => 'popover'}} .
+          = f.text_field :gift_type, autofocus: true, placeholder: 'What kind of wishlist?'
+      %span.wishlist-examples
+        Examples
+      %span.wishlist-examples.glyphicon.glyphicon-chevron-down
+      %ul.example-wishlists
+        %li My Christmas list!
+        %li Sophie's 6th birthday :)
+        %li LeeAnn's baby shower
+      .giftlist-visibility-warning.isa_warning
+        %i.fa.fa-info
+        %strong
+          Remember!
+        This giftlist title will be publicly visible
